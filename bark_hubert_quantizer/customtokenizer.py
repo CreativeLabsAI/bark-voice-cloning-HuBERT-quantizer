@@ -150,7 +150,8 @@ class Data:
         return json.dumps(data)
 
 
-def auto_train(data_path, save_path='model.pth', load_model: str | None = None, save_epochs=1):
+def auto_train(data_path, save_path='model.pth', load_model: Optional[str] = None, save_epochs=1):
+
     data_x, data_y = {}, {}
 
     if load_model and os.path.isfile(load_model):
