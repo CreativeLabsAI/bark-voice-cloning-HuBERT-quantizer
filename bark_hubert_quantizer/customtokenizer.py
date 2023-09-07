@@ -6,6 +6,7 @@ License: MIT
 
 import json
 import os.path
+from typing import Optional
 from zipfile import ZipFile
 
 import numpy
